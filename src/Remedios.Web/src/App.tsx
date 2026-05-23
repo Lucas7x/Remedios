@@ -5,6 +5,7 @@ import { RemediosList } from './pages/remedios/RemediosList'
 import { RemedioForm } from './pages/remedios/RemedioForm'
 import { ReceitasList } from './pages/receitas/ReceitasList'
 import { ReceitaForm } from './pages/receitas/ReceitaForm'
+import { ReceberReceita } from './pages/receitas/ReceberReceita'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/remedios/:id" element={<RemedioForm />} />
         <Route path="/receitas" element={<ReceitasList />} />
         <Route path="/receitas/nova" element={<ReceitaForm />} />
+        <Route path="/receitas/:id/receber" element={<ReceberReceita />} />
         <Route path="/receitas/:id" element={<ReceitaForm />} />
       </Routes>
     </Layout>

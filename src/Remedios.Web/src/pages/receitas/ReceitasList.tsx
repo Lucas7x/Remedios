@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
-import { Plus, Pencil, Trash2 } from 'lucide-react'
+import { Plus, Pencil, Trash2, PackageCheck } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { receitasApi } from '../../api/receitas'
 import { Badge } from '../../components/Badge'
@@ -57,6 +57,13 @@ export function ReceitasList() {
                   )}
                 </div>
                 <div className="flex items-center gap-1 shrink-0">
+                  <Link
+                    to={`/receitas/${r.id}/receber`}
+                    title="Receber remédios"
+                    className="p-1.5 text-blue-500 hover:bg-blue-50 rounded"
+                  >
+                    <PackageCheck size={15} />
+                  </Link>
                   <Link to={`/receitas/${r.id}`} className="p-1.5 text-gray-500 hover:bg-gray-100 rounded">
                     <Pencil size={15} />
                   </Link>

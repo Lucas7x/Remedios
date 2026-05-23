@@ -1,0 +1,6 @@
+@Remedios.Api_HostAddress = http://localhost:5121
+
+GET {{Remedios.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

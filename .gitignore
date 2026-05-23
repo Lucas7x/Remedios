@@ -1,0 +1,22 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.db
+*.db-shm
+*.db-wal
+
+## Rider / Resharper
+.idea/
+*.sln.iml
+_ReSharper*/
+*.ReSharper
+
+## VS Code
+.vscode/
+!.vscode/extensions.json
+
+## Publish output
+publish/

@@ -29,13 +29,6 @@ namespace Remedios.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ControleAbertura");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            UltimaAbertura = new DateTime(2026, 5, 23, 3, 5, 50, 257, DateTimeKind.Utc).AddTicks(7559)
-                        });
                 });
 
             modelBuilder.Entity("Remedios.Api.Models.Receita", b =>

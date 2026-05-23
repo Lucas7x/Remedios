@@ -72,11 +72,6 @@ namespace Remedios.Api.Migrations
                         onDelete: ReferentialAction.SetNull);
                 });
 
-            migrationBuilder.InsertData(
-                table: "ControleAbertura",
-                columns: new[] { "Id", "UltimaAbertura" },
-                values: new object[] { 1, new DateTime(2026, 5, 23, 3, 5, 50, 257, DateTimeKind.Utc).AddTicks(7559) });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Remedios_ReceitaId",
                 table: "Remedios",

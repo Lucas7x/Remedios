@@ -35,8 +35,6 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
         modelBuilder.Entity<ControleAbertura>(entity =>
         {
             entity.HasKey(c => c.Id);
-            // Seed com registro inicial único
-            entity.HasData(new ControleAbertura { Id = 1, UltimaAbertura = DateTime.UtcNow });
         });
     }
 }

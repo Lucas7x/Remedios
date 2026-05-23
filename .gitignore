@@ -20,3 +20,7 @@ _ReSharper*/
 
 ## Publish output
 publish/
+
+## Logs de execução local
+*.log
+*.err
